@@ -10,4 +10,5 @@
 * [7.匹配分组](7pi-pei-fen-zu.md)
 * [8.re模块的高级用法](8remo-kuai-de-gao-ji-yong-fa.md)
 * [9.贪婪和非贪婪](9tan-lan-he-fei-tan-lan.md)
+* [10.小练习](10xiao-lian-xi.md)
 
