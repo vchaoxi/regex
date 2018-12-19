@@ -1,3 +1,43 @@
-# My Awesome Book
+# 课程介绍
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+在开发中会有大量的字符串处理工作，其中经常会涉及到字符串格式的校验。
+
+## 思考
+
+**场景：如何判断一个字符串是手机号呢？**
+
+```python
+
+13811011234
+1a3hi233rhi3
+87156340
+
+```
+
+**场景：在一个文件中，查找出itcast开头的语句**
+
+测试文件
+
+```python
+
+itcast hello python
+itcast c++
+itheima ios
+itheima php
+
+```
+
+**场景：在一个文件中，找到含有itcast的语句**
+
+测试文件
+
+```python
+
+hello itcast python
+www.itcast.cn c++
+itheima ios
+itheima php
+
+```
+
+**场景：在一个文件中，找到邮箱为163或者126的所有邮件地址**
