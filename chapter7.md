@@ -129,7 +129,7 @@ ret.group()
 
 ## 示例4：\number
 
-需求：匹配出&lt html &gt &lt h1 &gt www.itcast.cn &lt /h1 &gt &lt /html &gt
+需求：匹配出&lt html &gt &lt h1 &gt www.vchaoxi.com &lt /h1 &gt &lt /html &gt
 
 ```python
 
@@ -137,10 +137,10 @@ ret.group()
 
 import re
 
-ret = re.match(r"<(\w*)><(\w*)>.*</\2></\1>", "<html><h1>www.itcast.cn</h1></html>")
+ret = re.match(r"<(\w*)><(\w*)>.*</\2></\1>", "<html><h1>www.vchaoxi.com</h1></html>")
 ret.group()
 
-ret = re.match(r"<(\w*)><(\w*)>.*</\2></\1>", "<html><h1>www.itcast.cn</h2></html>")
+ret = re.match(r"<(\w*)><(\w*)>.*</\2></\1>", "<html><h1>www.vchaoxi.com</h2></html>")
 ret.group()
 
 ```
@@ -151,7 +151,7 @@ ret.group()
 
 ## 示例5：(?P<name>) (?P=name)
 
-需求：匹配出&lt html &gt &lt h1 &gt www.itcast.cn &lt /h1 &gt &lt /html &gt
+需求：匹配出&lt html &gt &lt h1 &gt www.vchaoxi.com &lt /h1 &gt &lt /html &gt
 
 ```python
 
@@ -159,10 +159,10 @@ ret.group()
 
 import re
 
-ret = re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*</(?P=name2)></(?P=name1)>", "<html><h1>www.itcast.cn</h1></html>")
+ret = re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*</(?P=name2)></(?P=name1)>", "<html><h1>www.vchaoxi.com</h1></html>")
 ret.group()
 
-ret = re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*</(?P=name2)></(?P=name1)>", "<html><h1>www.itcast.cn</h2></html>")
+ret = re.match(r"<(?P<name1>\w*)><(?P<name2>\w*)>.*</(?P=name2)></(?P=name1)>", "<html><h1>www.vchaoxi.com</h2></html>")
 ret.group()
 
 ```

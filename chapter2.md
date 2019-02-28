@@ -23,7 +23,7 @@
 
 **匹配对象Macth Object具有group方法，用来返回字符串的匹配部分。**
 
-## 2. re模块示例(匹配以itcast开头的语句)
+## 2. re模块示例(匹配以vchaoxi开头的语句)
 
 ```python
 
@@ -31,7 +31,7 @@
 
     import re
 
-    result = re.match("itcast","itcast.cn")
+    result = re.match("vchaoxi","vchaoxi.com")
 
     result.group()
 
@@ -41,7 +41,7 @@
 
 ```python
 
-itcast
+vchaoxi
 
 ```
 

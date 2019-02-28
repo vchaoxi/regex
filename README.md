@@ -14,27 +14,27 @@
 
 ```
 
-**场景：在一个文件中，查找出itcast开头的语句**
+**场景：在一个文件中，查找出vchaoxi开头的语句**
 
 测试文件
 
 ```python
 
-itcast hello python
-itcast c++
+vchaoxi hello python
+vchaoxi c++
 itheima ios
 itheima php
 
 ```
 
-**场景：在一个文件中，找到含有itcast的语句**
+**场景：在一个文件中，找到含有vchaoxi的语句**
 
 测试文件
 
 ```python
 
-hello itcast python
-www.itcast.cn c++
+hello vchaoxi python
+www.vchaoxi.com c++
 itheima ios
 itheima php
 
