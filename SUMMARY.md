@@ -10,5 +10,6 @@
 * [7.匹配分组](chapter7.md)
 * [8.re模块的高级用法](chapter8.md)
 * [9.贪婪和非贪婪](chapter9.md)
-* [10.小练习](chapter10.md)
+* [10.单行模式和多行模式](chapter10.md)
+* [11.小练习](chapter11.md)
 
