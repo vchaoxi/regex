@@ -1,13 +1,14 @@
 # 匹配分组
 
-|字符|功能|
-| - | - |
-|\||匹配左右任意一个表达式|
-|(ab)|将括号中字符作为一个分组|
-|\num|引用分组num匹配到的字符串|
-|(?P<name>)|分组起别名|
-|(?P=name)|引用别名为name分组匹配到的字符串|
+```
+字符          功能
+|             匹配左右任意一个表达式
+(ab)          将括号中字符作为一个分组
+\num          引用分组num匹配到的字符串
+(?P<name>)    分组起别名
+(?P=name)     引用别名为name分组匹配到的字符串
 
+```
 ## 示例1：|
 
 需求：匹配出0-100之间的数字
@@ -95,9 +96,9 @@ ret.group()
 
 ## 示例3：\
 
-需求：匹配出&lt html &gt hh &lt /html &gt
+需求：匹配出`<html>hh</html>`
 
-```pyhton
+```python
 
 #coding=utf-8
 
@@ -113,7 +114,7 @@ ret.group()
 
 # 正确的理解思路：如果在第一对<>中是什么，按理说在后面的那对<>中就应该是什么
 
-# 通过引用分组中匹配到的数据即可，但是要注意是元字符串，即类似 r""这种格式
+# 通过引用分组中匹配到的数据即可，但是要注意是原始字符串，即类似 r""这种格式
 ret = re.match(r"<([a-zA-Z]*)>\w*</\1>", "<html>hh</html>")
 ret.group()
 
@@ -129,7 +130,7 @@ ret.group()
 
 ## 示例4：\number
 
-需求：匹配出&lt html &gt &lt h1 &gt www.vchaoxi.com &lt /h1 &gt &lt /html &gt
+需求：匹配出`<html><h1>www.vchaoxi.com</h1></html>`
 
 ```python
 
@@ -151,7 +152,7 @@ ret.group()
 
 ## 示例5：(?P<name>) (?P=name)
 
-需求：匹配出&lt html &gt &lt h1 &gt www.vchaoxi.com &lt /h1 &gt &lt /html &gt
+需求：匹配出`<html><h1>www.vchaoxi.com</h1></html>`
 
 ```python
 
