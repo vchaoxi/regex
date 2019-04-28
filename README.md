@@ -22,8 +22,8 @@
 
 vchaoxi hello python
 vchaoxi c++
-itheima ios
-itheima php
+vchaoxi ios
+vchaoxi php
 
 ```
 
@@ -35,8 +35,8 @@ itheima php
 
 hello vchaoxi python
 www.vchaoxi.com c++
-itheima ios
-itheima php
+vchaoxi ios
+vchaoxi php
 
 ```
 
